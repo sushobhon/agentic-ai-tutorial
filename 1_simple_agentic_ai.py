@@ -16,7 +16,7 @@ def calculator_tool(query):
     except Exception as e:
         return f"Error in calculation: {e}"
 
-# 2. DuckDuckGo search tool
+# 2. Wikipedia search tool
 def web_search(query):
     url = "https://en.wikipedia.org/w/api.php"
     params = {
