@@ -1,8 +1,5 @@
 import ollama
-import re
-import time
 import requests
-from duckduckgo_search import DDGS
 
 # --- Creating tools for the agents --- #
 # 1. Simple calculator tool
@@ -10,7 +7,7 @@ def calculator_tool(query):
     """A simple calculator tool."""
     try:
         # Keep only numbers, operators, parentheses, and dots
-        cleaned_expr = query.split('=')[0]  # Remove anything after '='
+        cleaned_expr = query.split(' = ')[0]  # Remove anything after '='
         cleaned_expr = "".join(cleaned_expr).strip()
         return str(eval(cleaned_expr))
     except Exception as e:
