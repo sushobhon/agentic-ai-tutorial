@@ -28,8 +28,21 @@ Create a new vertual environments using `pyproject.toml` file.
 ```
 uv venv .venv
 ```
-Activate the environment
+Activate the environment for windows
 ```
 .venv\Scripts\activate
 ```
-Now, install all the packages.
+To activate environment for mac or ubantu
+```
+source .venv/bin/activate
+```
+
+Now, install all the packages based on `pyproject.toml`.
+```
+uv pip install -r pyptoject.toml
+```
+Once all the packages are installed open `main.py` file and run the code using below command
+```
+streamlit run main.py
+```
+A new webpage with chat inteface will open. Go Ahead and chat.
