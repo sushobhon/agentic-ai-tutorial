@@ -17,5 +17,6 @@ dependencies = [
     "ollama>=0.5.3",
     "requests>=2.32.4",
     "sentence-transformers>=5.1.0",
+    "streamlit>=1.50.0",
     "wikipedia>=1.4.0",
 ]
